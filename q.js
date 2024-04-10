@@ -149,6 +149,5 @@ function next() {
   quiz.innerHTML = `<h2>You answered ${score}/${Data.length} question correctly</h2>
     <button type="button" onclick="location.reload()">Reload</button>
     `;
-  conductorel.style.display = "none";
  }
 }
