@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+        <style>
+          
+          body {
+            background: rgb(14, 108, 203);
+            font-family: Georgia, serif;
+            align-items: center;
+            height: 100px;
+          }
+          .quizcontainer {
+            background: #fff;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 100%;
+          }
+
+          .quizheader {
+           align-items: center;
+           padding: 2rem 2rem;
+           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+           border-top-left-radius: 10px;
+           border-top-right-radius: 10px;
+           font-size:60px;
+          }
+
+        h2 {
+          font-size:60px;
+        }
+
+         .quizheader h3{
+         font-size:100px;
+          }
+
+          .quizheader p {
+           background: #111;
+           padding: 0.4rem 1rem;
+           color: #fff;
+           border-radius: 5px;
+           font-size:60px;
+          }
+
+          .quizbody {
+          padding: 2rem 2rem;
+          }
+          .quizbody h3 {
+           padding: 1rem 0;
+           font-size: 2rem;
+           font-weight: 500;
+           text-align: center;
+           margin: 0;
+          }
+          .quizbody ul {
+           list-style: none;
+           padding: 0;
+          }
+          .quizbody ul li {
+           margin: 1rem 0;
+           font-size: 1rem;
+           border: 1px solid #aab7b8;
+           padding: 0.7rem;
+           border-radius: 5px;
+           cursor: pointer;
+          }
+          .quizbody ul li label {
+           cursor: pointer;
+           padding: 0 0.4rem;
+          }
+          .quizconductor {
+           align-items: center;
+           padding: 1rem 2rem;
+           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          }
+          .quizconductor button {
+           padding: 0.6rem 1.5rem;
+           background: #111;
+           cursor: pointer;
+           border-radius: 5px;
+           color: #fff;
+          }
+          .quizbody button {
+           padding: 0.6rem 1rem;
+           background: #111;
+           cursor: pointer;
+           border-radius: 5px;
+           color: #fff;
+          }
+        </style>    
+    </head>
+    <body>
+        <div class="quizcontainer" id="quiz">
+            <div class="quizheader">
+              <h2 class="headertxt">Finance Knowledge Quiz</h2>
+            </div>
+            <div class="quizbody">
+              <h3 id="question">Question</h3>
+              <ul>
+                <li>
+                  <input type="radio" name="answer" id="a" class="answer" />
+                  <label for="a" id="atext">Questions</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="b" class="answer" />
+                  <label for="b" id="btext">Questions</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="c" class="answer" />
+                  <label for="c" id="ctext">Questions</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="d" class="answer" />
+                  <label for="d" id="dtext">Questions</label>
+                </li>
+              </ul>
+            </div>
+            <div class="quizconductor">
+              <div class="details"></div>
+              <button type="button" id="btn1">Submit</button>
+            </div>
+          </div>
+          <script src="q.js"></script>
+    </body>
+</html>
